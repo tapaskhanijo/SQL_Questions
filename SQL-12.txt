@@ -1,0 +1,3 @@
+Q Show the difference between the largest weight and smallest weight for patients with the last name 'Maroni'
+
+--> select (max(weight)-min(weight)) as difference from patients group by last_name having last_name in ('Maroni');

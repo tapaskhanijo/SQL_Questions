@@ -1,0 +1,3 @@
+Q Write a query to find list of patients first_name, last_name, and allergies from Hamilton where allergies are not nka or null
+
+--> select first_name,last_name,allergies from patients where (city in ('Hamilton') AND allergies NOT in ('NKA', 'NULL'));
